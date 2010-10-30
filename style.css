@@ -1,0 +1,105 @@
+/*
+Theme Name: 17od.com
+Theme URI: http://www.17od.com/
+Description: Minimalist theme 
+Author: Adrian Smith
+Version: 1.0 
+Tags: minimial
+*/
+
+#content-column {
+    margin: auto;
+    width: 66.66%;
+}
+
+#header {
+    text-transform: lowercase;
+    margin-top: 0.5em;
+    /* Elements within header should be positioned relative to header.
+       This allows the nav-links to use an absolute position within the header. */ 
+    position: relative;
+}
+
+#nav-links {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+a:link    { text-decoration: none; color: red }
+a:visited { text-decoration: none; color: red }
+a:hover   { text-decoration: underline; color: red }
+a:active  { text-decoration: none; color: red }
+
+a.covert:link    { text-decoration: none; color: black }
+a.covert:visited { text-decoration: none; color: black }
+a.covert:hover   { text-decoration: underline; color: red }
+a.covert:active  { text-decoration: none; color: black }
+
+.post-listings a:link    { text-decoration: none; color: black }
+.post-listings a:visited { text-decoration: none; color: black }
+.post-listings a:hover   { text-decoration: none; color: red }
+.post-listings a:active  { text-decoration: none; color: black }
+
+hr.thin {
+    height: 1px;
+    border: 0;
+    background-color: #D3D3D3;
+    clear: both;
+}
+
+body {
+    font-family: Perpetua;
+    font-size: x-large;
+}
+
+h1 {
+    font-family: Calibri;
+    font-size: xx-large;
+    margin-bottom: 0.2em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+p + ul {
+    margin-top: -0.5em;
+}
+
+/*#footer {
+    margin-top: 1.5em;
+}*/
+
+/*.post-listings h1 {
+    margin-bottom: 0.2em;
+}*/
+
+.post-listings ul {
+    list-style-type: none;
+    padding-left: 0;
+/*    margin-top: 0;*/
+}
+
+.post-listings a:active {
+    color: black;
+}
+
+.small-text {
+    font-family: Calibri;
+    font-size: medium;
+}
+
+.entry-date {
+    color: gray;
+    font-size: large;
+}
+
+#disqus_thread {
+    font-family: Arial;
+}
+
+.dsq-brlink {
+    font-family: Arial;
+}
+
