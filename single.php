@@ -14,8 +14,6 @@
         <?php the_content(); ?>
       </div>
 
-      <hr class="thin"/>
-
       <?php comments_template(); ?>
 
 <?php get_footer(); ?>
