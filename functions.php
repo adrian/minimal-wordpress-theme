@@ -30,7 +30,10 @@ function adrian_get_archives() {
 					if ( $last_post_year != '' ) {
 						$before = '</ul>';
 					}
-					$before = $before . '<h1>' . $post_year . '</h1><ul><li>';
+					if ( $post_year != date('Y') ) { 
+						$before = $before . '<div class="year-heading">' . $post_year . '</div>';
+					}
+					$before = $before . '<ul><li>';
 					$last_post_year = $post_year;
 				} else {
 					$before = '<li>';

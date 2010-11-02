@@ -8,18 +8,13 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <title>Adrian Smith's Blog</title>
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>"/>
-    <link type="text/css" rel="stylesheet" href="<?php bloginfo('template_url'); ?>/disqus-form.css" media="screen" />
-    <script type="text/javascript">
-      var disqus_iframe_css = "<?php bloginfo('template_url'); ?>/disqus-form.css";
-    </script>
+    <link href='http://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT:regular,italic' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div id="content-column">
       <div id="header">
-        <a class="covert" href="<?php bloginfo( 'url' ); ?>">Adrian Smith</a>
+        <a class="covert" href="<?php bloginfo( 'url' ); ?>">Adrian Smith's Blog</a>
         <div id="nav-links">
-          <a href="<?php bloginfo( 'url' ); ?>">Blog</a>
-          -
           <a href="/projects/">Projects</a>
           -
           <a href="/about/">About</a>
