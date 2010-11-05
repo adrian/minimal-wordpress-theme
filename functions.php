@@ -32,6 +32,8 @@ function adrian_get_archives() {
 					}
 					if ( $post_year != date('Y') ) { 
 						$before = $before . '<div class="year-heading">' . $post_year . '</div>';
+					} else {
+						$before = $before . '<div class="year-heading">Recent Posts</div>';
 					}
 					$before = $before . '<ul><li>';
 					$last_post_year = $post_year;
