@@ -1,9 +1,4 @@
 <?php get_header(); ?>
-
-      <?php the_post(); ?>
-
-      <div class="entry-content">
-        <?php the_content(); ?>
-      </div>
-
+<?php the_post(); ?>
+<?php the_content(); ?>
 <?php get_footer(); ?>

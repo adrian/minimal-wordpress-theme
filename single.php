@@ -2,17 +2,13 @@
 
       <?php the_post(); ?>
 
-      <h1 class="entry-title">
-        <a class="covert" href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+      <h1>
+        <a class="covert-link" href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
       </h1>
       
-      <div class="entry-date">
-        Posted on <?php the_time('l, F jS, Y'); ?>
-      </div>
+      <?php the_content(); ?>
 
-      <div class="entry-content">
-        <?php the_content(); ?>
-      </div>
+       <div id="last-modified">Last Updated: <?php the_modified_time('F j, Y'); ?> </div> 
 
       <?php comments_template(); ?>
 

@@ -6,47 +6,54 @@ Author: Adrian Smith
 Version: 1.0 
 Tags: minimial
 */
-
-
-#content-column {
-    margin: auto;
-    width: 66.66%;
+body {
+    line-height: 1.6;
+    font-family: Georgia, Times New Roman, Times, serif;
+    color: #222222;
+    width: 80%;
+    margin: 0 auto;
 }
 
-#header {
-    text-transform: lowercase;
-    margin-top: 0.5em;
-    /* Elements within header should be positioned relative to header.
-       This allows the nav-links to use an absolute position within the header. */ 
-    position: relative;
-    font-size: 1em;
+h1 {
+    font-weight: normal;
+    font-size: 2.4em;
+    margin-bottom: 0em;
 }
 
-#nav-links {
-    position: absolute;
-    top: 0;
-    right: 0;
+code, pre, blockquote {
+    background-color: #EEEEEE;
+    border: 1px solid #CCCCCC;
+    font-size: 0.9em;
 }
 
-a:link    { text-decoration: none; color: red }
-a:visited { text-decoration: none; color: red }
-a:hover   { text-decoration: underline; color: red }
-a:active  { text-decoration: none; color: red }
+code, pre {
+    font-family: DejaVu Sans Mono, monospaced;
+}
 
-a.covert:link    { text-decoration: none; color: black }
-a.covert:visited { text-decoration: none; color: black }
-a.covert:hover   { text-decoration: underline; color: red }
-a.covert:active  { text-decoration: none; color: black }
+blockquote {
+    border-left: thick solid #CCC;
+    padding: 0 1em;
+    overflow: auto;
+}
 
-.post-listings a:link    { text-decoration: none; color: black }
-.post-listings a:visited { text-decoration: none; color: black }
-.post-listings a:hover   { text-decoration: none; color: red }
-.post-listings a:active  { text-decoration: none; color: black }
+pre {
+    overflow: auto;
+    padding: 0.5em;
+}
 
-.entry-title a:link    { text-decoration: none; color: black }
-.entry-title a:visited { text-decoration: none; color: black }
-.entry-title a:hover   { text-decoration: none; color: red }
-.entry-title a:active  { text-decoration: none; color: black }
+pre > code {
+    border: none;
+    padding: 0;
+}
+
+ul.posts {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.post-date {
+    color: grey;
+}
 
 hr.thin {
     height: 1px;
@@ -55,60 +62,44 @@ hr.thin {
     clear: both;
 }
 
-body {
-    font-family: Palatino, 'Palatino Linotype', serif;
-    font-size: large;
-    color: #222222;
-}
-
-h1 {
-    font-family: font-family: 'Old Standard TT', arial, serif;
-    font-size: 1.5em;
-    margin-bottom: 0em;
-    font-weight: normal;
-}
-
-.year-heading + ul {
-    margin-top: 0;
-}
-
-li {
-    margin-bottom: 0.5em;
-    list-style-type: circle;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-p + ul {
-    margin-top: -0.5em;
-}
-
-.post-listings ul {
-    padding-left: 0;
-}
-
-.post-listings ul li {
-    list-style-type: none;
-}
-
-.entry-date {
-    color: gray;
-    font-size: large;
-}
-
-.year-heading {
+#header {
+    text-transform: lowercase;
+    /* Elements within header should be positioned relative to header.
+       This allows the nav-links to use an absolute position within the header. */ 
+    position: relative;
     margin-top: 0.5em;
+}
+
+#nav-links {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+a.covert-link:link    { text-decoration: none; color: #222222; }
+a.covert-link:visited { text-decoration: none; color: #222222; }
+a.covert-link:hover   { text-decoration: none; color: red; }
+a.covert-link:active  { text-decoration: none; color: #222222; }
+
+h2.post-listing-header {
     margin-bottom: 0em;
-    font-size: 1.3em;
-    font-weight: bold;
-    font-family: Palatino,Garamond,Times,Georgia,serif;
+}
+
+h2 + ul {
+    margin-top: 0em;
+}
+
+h1 + p {
+    margin-top: 0em;
 }
 
 #disqus_thread {
-    border-top: solid;
-    border-color: #D3D3D3;
-    border-width: 1px;
+    padding: 1em;
+    background-color: #ECF1EF;
 }
 
+#last-modified {
+    font-size: 0.9em;
+    margin-bottom: 1em;
+    color: grey;
+}
