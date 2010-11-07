@@ -8,7 +8,7 @@ Tags: minimial
 */
 body {
     line-height: 1.6;
-    font-family: Georgia, Times New Roman, Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     color: #222222;
     width: 80%;
     margin: 0 auto;
@@ -28,7 +28,7 @@ code, pre, blockquote {
 }
 
 code, pre {
-    font-family: DejaVu Sans Mono, monospaced;
+    font-family: "DejaVu Sans Mono", monospaced;
 }
 
 blockquote {
@@ -53,7 +53,7 @@ ul.posts {
 }
 
 .post-date {
-    color: grey;
+    color: #EEEEEE;
 }
 
 hr.thin {
@@ -102,5 +102,5 @@ h1 + p {
 #last-modified {
     font-size: 0.9em;
     margin-bottom: 1em;
-    color: grey;
+    color: #808080;
 }
