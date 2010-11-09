@@ -32,7 +32,7 @@ code, pre, blockquote {
 }
 
 code, pre {
-    font-family: "DejaVu Sans Mono", monospaced;
+    font-family: Consolas, Menlo, "Courier New", monospace;
 }
 
 blockquote {
