@@ -21,7 +21,9 @@ function get_all_posts() {
 
 		$last_post_year = $post_year;
 
-		$output = $output . get_archives_link($post_url, $post_title);
+		$date_span = '<div class="post-date">' . date('d M Y', strtotime($post->post_date)) . '</div>';
+
+		$output = $output . get_archives_link($post_url, $post_title, 'html', $date_span);
 	}
 
 	if ($last_post_year != '') {

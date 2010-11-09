@@ -53,7 +53,9 @@ ul.posts {
 }
 
 .post-date {
-    color: #EEEEEE;
+    float: left;
+    color: #999999;
+    width: 6em;
 }
 
 hr.thin {
