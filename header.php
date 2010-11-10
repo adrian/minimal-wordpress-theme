@@ -24,7 +24,7 @@
       <div id="nav-links">
         <a href="<?php bloginfo( 'url' ); ?>">Blog</a>
         -
-        <a href="https://github.com/adrian/">Code</a>
+        <a href="<?php bloginfo( 'url' ); ?>/projects/">Projects</a>
         -
         <a href="<?php bloginfo( 'url' ); ?>/about/">About</a>
         -
