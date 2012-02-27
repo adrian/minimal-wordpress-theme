@@ -5,6 +5,9 @@
     <title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>"/>
     <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/AdrianSmithsBlog" />
+    <link rel="stylesheet" href="<?php bloginfo( 'wpurl' ); ?>/highlight/styles/default.css">
+    <script src="<?php bloginfo( 'wpurl' ); ?>/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-1107504-1']);
